@@ -1,0 +1,39 @@
+PETUNJUK  INSTALL APLIKASI
+ 
+1. Nyalakan Webserver (Kalau belum ada install dulu , program xampp yg tersedia di folder web-server). 
+Untuk Windows XP, 7 dan Windows 8 – Rekomendasi Versi Xampp 1.8.0
+- untuk Linux, gunakan lampp atau install manual atau webserver sejenisnya.
+- untuk Windows, gunakan Xampp, uWamp (rekomendasi - www.uwamp.com), atau sejenisnya.
+2. copy folder simpeg ke htdocs atau www atau public_html
+-  untuk linux lammp ada di /opt/lampp/htdocs/
+3. buka phpmyadmin, lalu buat database baru dengan nama misal inventori
+4. pilih db yg telah dibuat tadi, lalu import file simpeg.sql melalui phpmyadmin
+5. buka file simpeg/inc/inc.koneksi.php
+lihat baris di kebawah
+ 
+ubah bagian ini:
+$server = "localhost"; //
+$username = "root";  //
+$password = ""; //
+$database = "simpeg";
+Ubah sesuai aturan webserver Anda.
+ 
+ 
+Lalu silahkan buka di browser:
+http://localhost/simpeg/
+User Level Admin
+- username: admin
+- password: admin
+
+User Level HRD
+- username: hrd
+- password: hrd
+
+User Level HRD
+- username: gm
+- password: gm
+ 
+===================================
+ 
+Terimakasih
+
